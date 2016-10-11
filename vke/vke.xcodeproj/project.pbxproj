@@ -284,6 +284,7 @@
 				B812C2F31DA39ABC000CED86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -17,6 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obq-kM-91E">
+                                <rect key="frame" x="132" y="269" width="56" height="30"/>
+                                <state key="normal" title="Hesapla"/>
+                                <connections>
+                                    <action selector="hesapla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bv4-CE-qCp"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kilonuz:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uB2-5c-gnb">
                                 <rect key="frame" x="20" y="45" width="61" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -39,13 +46,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obq-kM-91E">
-                                <rect key="frame" x="132" y="216" width="56" height="30"/>
-                                <state key="normal" title="Hesapla"/>
-                                <connections>
-                                    <action selector="hesapla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bv4-CE-qCp"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sonuç:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhv-1R-hAD">
                                 <rect key="frame" x="20" y="256" width="53" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -53,7 +53,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yok." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="684-ep-V9z">
-                                <rect key="frame" x="20" y="285" width="269" height="102"/>
+                                <rect key="frame" x="20" y="307" width="269" height="102"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -61,6 +61,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="lblDurum" destination="684-ep-V9z" id="oYw-dx-dvx"/>
                         <outlet property="txtBoy" destination="OVu-1q-pt1" id="r2H-nK-w1a"/>
@@ -69,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="209" y="484"/>
+            <point key="canvasLocation" x="494" y="290"/>
         </scene>
     </scenes>
 </document>

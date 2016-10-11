@@ -14,23 +14,28 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtKilo: UITextField!
     @IBOutlet weak var txtBoy: UITextField!
     @IBOutlet weak var lblDurum: UILabel!
+    @IBOutlet weak var ScrollView: UIScrollView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
     @IBAction func hesapla(sender: AnyObject) {
         
         //Kullanılacak olan değişkenler tanımlandı.
-        var kilo:Double = 0.0
-        var boy:Double = 0.0
-        var vke:Double = 0.0
+        var kilo:Float = 0.0
+        var boy:Float = 0.0
+        var vke:Float = 0.0
         
         //Textbox'a girilen değerler değişkenlere aktarıldı.
-        kilo = Double(txtKilo.text!)!
-        boy = Double(txtBoy.text!)!
+        kilo = Float(txtKilo.text!)!
+        boy = Float(txtBoy.text!)!
         
         //Boy değeri mesala 165 olarak geliyor direk bu şekilde hesaplama yapılmaya kalkıldığı zaman normalin çok üstünde bir değer veriyor. Bundan dolayı 100 bölme ihtiyacı duydum. 100'e bölünce elimde 1.65 gibi bir değer olacaktır.
         boy = boy/100
         
         //vke(vücut kitle indeksi) değeri hesaplanıyor burada.
-        vke = (Double(kilo)/Double(boy*boy))
+        vke = (Float(kilo)/Float(boy*boy))
         
         //vke değeri gerekli kontrollerden geçiriliyor ve kişiye durumu söyleniyor.
         if(vke<18.6){
